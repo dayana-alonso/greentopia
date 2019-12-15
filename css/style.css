@@ -1,3 +1,6 @@
+.box { 
+  border:1px red dotted;
+}
 
 a:focus {
 	color: #666;
@@ -203,7 +206,7 @@ body {
 .tm-gallery-container {	overflow-y: hidden; }
 
 .grid {
-  max-width: 1165px;
+  max-width: 1465px;
   margin: 0 auto;
 }
 
@@ -215,18 +218,11 @@ body {
 }
 
 /* fluid 5 columns */
-.grid-item { margin: 5px; }
+.grid-item { margin: 4px 3px; 
+position: absolute;
 
-
-.resize {
-    width: 60px;
-    height: auto;
 }
 
-.resize {
-    width: 40px;
-    height: auto;
-}
 
 
 */
@@ -295,18 +291,16 @@ address { line-height: 2; }
 
 .grid {
 	position: relative;
-	margin: -1.5rem auto;
+	margin: 1rem auto;
 	list-style: none;
 	text-align: center;	
 }
 
 @media (min-width: 524px) {	
-	/* Firefox hack 
-   		https://css-tricks.com/snippets/css/css-hacks-targeting-firefox/
-	*/
+	
 	@-moz-document url-prefix() { 
 	  	.grid figure {
-			margin: 8px 1%;	/* padding-bottom in % not working in FF, so use em instead. */
+			margin: 8px 1%;	
 		}
 	}
 }
@@ -321,12 +315,9 @@ address { line-height: 2; }
 	.tm-section-title { margin-bottom: 30px; }
 	.tm-box-pad { padding: 45px 40px; }
 
-	/* Firefox hack 
-   	https://css-tricks.com/snippets/css/css-hacks-targeting-firefox/
-	*/
 	@-moz-document url-prefix() { 
 	  	.grid figure {
-			margin: 10px 1.1666%;	/* padding-bottom in % not working in FF, so use em instead. */
+			margin: 10px 1.1666%;	
 		}
 	}
 }
